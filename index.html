@@ -21,150 +21,43 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <div class="container">
-                <a href="#" class="navbar-brand">André apps</a>
-
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="nav-principal">
-                    <ul class="navbar-nav ml-auto"> 
-                        <li class="nav-item">
-                            <a href="index.html" class="nav-link">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/imc.html" class="nav-link">IMC</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/calorias.html" class="nav-link">Medidor calórico</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="pages/texto.html" class="nav-link">Editor de Texto</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="https://jogodacobrinha-andre.netlify.app/" class="nav-link" target="_blank">Snack Game</a>
-                        </li>
-                    </ul>
-                </div>
+                <a class="navbar-brand" href="#">
+                    <img src="img/coracao.png" width="30" height="30" alt="">
+                    Calculadora do Amor
+                </a>
             </div>  
         </nav>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 d-flex">
-                    <div class="align-self-center">
-                        <h1>Várias Soluções</h1>
-                        <p>
-                            Encontre aqui alguns projetos pessoais que venho desenvolvendo. Você poderá se divertir desde aplicações para saúde até um simples joguimho.
-                        </p>
-
-                        <p>
-                            Entre em contato 
-                            <a href="https://api.whatsapp.com/send?phone=5586994998786" class="btn btn-outline-dark">
-                                <i class="fab fa-whatsapp fa-lg"></i> 
-                            </a>
-                            <a href="mailto:handreluis.369@gmail.com?subject=Questions" class="btn btn-outline-dark">
-                                <i class="fas fa-envelope-open-text fa-lg"></i>
-                            </a>
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-6 d-none d-md-block">
-                    <img src="img/foto.png">
-                </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 d-flex">
+                <img src="img/coracao.png" class="img-fluid">
             </div>
-        </div>
-    </section>
-
-    <section class="caixa">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 d-flex">
-                    <div class="align-self-center">
-                        <h2>Calcule seu IMC (Índice de Massa Corpórea)</h2>
-                        <p>
-                            Basta preencher a calculadora com seu peso e altura. Assim você saberá seu peso ideal.
-                        </p>
-                        <a href="pages/imc.html" class="btn btn-primary">Acessar</a>
+            <div class="col-md-6 d-flex">
+                <form class="mt-4 mb-4" id="form">
+                    <h3>Hora de testar</h3>
+                    <div class="row form-group">
+                        <div class="col">
+                            <label for="nome">Primeiro nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Ex: Daniel...">
+                        </div>
+                        <div class="col">
+                            <label for="nome">Segundo nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Ex: Daniel...">
+                        </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/saude.png" class="img-fluid">
-                </div>
+                    <button type="submit" class="btn btn-primary">Calcular</button>
+                </form>
             </div>
-        </div>
-    </section>
-
-    <section class="caixa">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 d-flex">
-                    <div class="align-self-center">
-                        <h2>Obtenha seus indices calóricos</h2>
-                        <p>
-                            Basta preencher os campos necessários e você terá o resultado.
-                        </p>
-                        <a href="pages/imc.html" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/saude2.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="caixa">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="img/cobra.png" class="img-fluid">
-                </div>
-                <div class="col-md-8 d-flex">
-                    <div class="align-self-center">
-                        <h2>Snack Game ou Jogo da Cobrinha</h2>
-                        <p>
-                            Aqui você pode se divertir um pouco. Tente comer o maximo de maçãs possiveis e fazer a cobra crescer.
-                        </p>
-                        <a href="https://jogodacobrinha-andre.netlify.app/" class="btn btn-primary" target="_blank">Acessar</a>
-                    </div>
-                </div> 
-            </div>
-        </div>
-    </section>
-
-    <section class="caixa">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 d-flex">
-                    <div class="align-self-center">
-                        <h2>Editor de texto</h2>
-                        <p>
-                            Uma solução para você colocar todo seu texto em caixa alta ou caixa baixa.
-                        </p>
-                        <a href="pages/texto.html" class="btn btn-primary">Acessar</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <img src="img/texto5.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </section>
+        </div>    
+    </div>
 
     <footer class="mt-4 mb-4">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p>
-                        <a href="index.html">Home</a>
-                        <a href="pages/imc.html">IMC</a>
-                        <a href="pages/calorias.html">Medidor calórico</a>
-                        <a href="pages/texto.html">Editor de Texto</a>
-                        <a href="https://jogodacobrinha-andre.netlify.app/" target="_blank">Snack Game</a>
-                    </p>
+                    
                 </div>
                 <div class="col-md-4 d-flex justify-content-end">
                     <a href="https://www.facebook.com/profile.php?id=100023712129992" class="btn btn-outline-dark ml-2">
